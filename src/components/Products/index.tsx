@@ -1,3 +1,4 @@
+'use client'
 // types
 import { IProduct } from "@/types";
 

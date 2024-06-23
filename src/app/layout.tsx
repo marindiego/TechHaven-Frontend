@@ -11,7 +11,11 @@ import Footer from "@/components/Footer";
 import { AuthProvider } from "@/context/AuthContext";
 
 //Fonts
-const nunito = Nunito_Sans({ subsets: ["latin"] });
+const nunito = Nunito_Sans({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+});
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 // Layout

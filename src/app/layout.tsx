@@ -2,7 +2,7 @@
 import type { Metadata } from "next";
 
 // Styles
-import { Nunito_Sans, Montserrat } from 'next/font/google';
+//import { Nunito_Sans, Montserrat } from 'next/font/google';
 import "./globals.css";
 
 //Components
@@ -11,12 +11,12 @@ import Footer from "@/components/Footer";
 import { AuthProvider } from "@/context/AuthContext";
 
 //Fonts
-const nunito = Nunito_Sans({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-});
-const montserrat = Montserrat({ subsets: ["latin"] });
+// const nunito = Nunito_Sans({
+//   weight: ['400', '700'],
+//   subsets: ['latin'],
+//   display: 'swap',
+// });
+// const montserrat = Montserrat({ subsets: ["latin"] });
 
 // Layout
 export const metadata: Metadata = {
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <AuthProvider>
       <html lang="en">
-        <body className={nunito.className}>
+        <body >
           <NavBar />
           {children}
           <Footer />
